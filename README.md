@@ -1,2 +1,16 @@
-# twitter_bot
-weather information auto tweet in kochi.
+# 概要
+このプログラムは、Twitterで高知県中部の気象データを定期的に呟くプログラムです。
+気象庁のホームページから、データを抽出し、TwitterAPIを用いて自動的にツイートします。
+# 環境
+このプログラムはHerokuを通して実行されており、スケジューラーによって定期実行することが前提となっています。
+HerokuサーバはUTCのため、JSTに変換して実行する。
+nowtime.pyによって、UTC時間、JST時間を関数で呼び出すことができる。
+key.pyにTwitterAPIを入力しておく。
+
+## 参考文献
+URL...
+
+## 付録
+autoreply.pyは、TwitterAPIキーを入れておくと
+そのユーザに@リプライが飛んでくると、(今の所)自動で定型文を瞬時に返信するプログラム。
+
